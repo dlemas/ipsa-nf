@@ -11,8 +11,30 @@ The pipeline allows to perform the following splicing analyses:
 * Calculation of exon-centric and intron-centric splicing metrics
 * Identification of micro-exons
 
-## Quickstart
+## UFRC instructions 
 
+you will need to first load in the appropriate modules: nextflow, github, singulairty, Gatk. you can do this using the commands below:
+
+*ml nextflow
+
+*ml git
+
+*ml singularty
+
+*ml gatk
+
+after loading these programs you will need to pull the repository to your UFRC account. This can be done in the following steps:
+
+* use the command "git clone " followed by the repository link.
+* change your directory into the repository using "cd ipsa-nf/"
+
+After entering into the repository you will load the singulairty image using the dockerfile in the Docker folder:
+
+*singularty run docker://docker
+
+once you have a working sontainer you can now run the code appropriatly within the container. 
+
+## Quickstart
 Install nextflow with the following command:
 ```
 curl -fsSL get.nextflow.io | bash
